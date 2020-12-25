@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Confirm",
+  "version": "1.0.0",
+  "description": "A Chrome extension to fill the confirmation dialog inputs for dangerous actions",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/settings"],
+      "js": ["github.js"]
+    }
+  ]
+}
